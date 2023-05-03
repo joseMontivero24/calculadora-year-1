@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wdt-content">
+
+
+        <div class="container">
+            <form>
+                <div class="titulo">
+                    <h4>Calculadora de años</h4>
+                </div>
+                <div class="base">
+
+                    <div class="block">
+                        <p class="title">Fecha</p>
+                        <input type="text" name="date" id="date" placeholder="Fecha nacimiento..." required="required"
+                            minlength="1" maxlength="2" />
+                    </div>
+                    <div class="block">
+                        <p class="title">Mes</p>
+                        <input type="text" name="month" id="month" placeholder="Mes nacimiento..." required="required"
+                            minlength="1" maxlength="2" />
+                    </div>
+                    <div class="block">
+                        <p class="title">Año</p>
+                        <input type="text" name="year" id="year" placeholder="Año nacimiento..." required="required"
+                            minlength="4" maxlength="4" />
+                    </div>
+                </div>
+                <div class="base">
+                    <div class="enter">
+                        <input type="button" name="submit" value="Preguntar" onclick="age()" />
+
+                        <div class="reset" id="reset-btn">
+                            <button>Borrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteine">
+                    <div id="age"></div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
